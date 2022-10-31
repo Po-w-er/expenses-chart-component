@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <p>My balance</p>
+        <h1>$921.48</h1>
+      </div>
+      <div>
+        <img class="logo" src="images/logo.svg" alt="" aria-hidden="true" />
+      </div>
+    </header>
+
+    <main>
+      <article class="chart-card">
+        <div class="time-span"><h2>Spending - Last 7 days</h2></div>
+        <div class="bars">
+          <div>
+            <div class="bar" data-id="1" style="--width:17.45; --color: hsl(10, 79%, 65%);">
+              <span class="bill"> </span>
+            </div>
+            <p>mon</p>
+          </div>
+          <div>
+            <div class="bar" data-id="2" style="--width:34.91; --color: hsl(10, 79%, 65%);">
+              <span class="bill"></span>
+            </div>
+            <p>tue</p>
+          </div> 
+          <div>
+            <div class="bar"data-id="3" style="--width:52.36; --color: hsl(10, 79%, 65%);">
+              <span class="bill"></span>
+            </div>
+            <p>wed</p>
+          </div>
+          <div>
+            <div class="bar" data-id="4"style="--width:31.07; --color: hsl(10, 79%, 65%);">
+              <span class="bill"></span>
+            </div>
+            <p>thur</p>
+          </div>
+          <div>
+            <div class="bar" data-id="5"style="--width:23.39; --color: hsl(10, 79%, 65%);">
+              <span class="bill"></span>
+            </div>
+            <p>fri</p>
+          </div>
+          <div>
+            <div class="bar" data-id="6" style="--width:43.28; --color: hsl(10, 79%, 65%);">
+              <span class="bill"></span>
+            </div>
+            <p>sat</p>
+          </div>
+          <div>
+            <div class="bar" data-id="7" style="--width:25.48; --color: hsl(10, 79%, 65%);">
+              <span class="bill"></span>
+            </div>
+            <p>sun</p>
+          </div>
+         
+        </div>
+        <div class="spent">
+          <div>
+            <p>Total this month</p>
+            <h2>$478.33</h2>
+          </div>
+          <div>
+            <h3>+2.4%</h3>
+            <p>from last month</p>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
